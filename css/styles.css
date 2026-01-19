@@ -1,0 +1,27 @@
+/* for banner-section */
+#hero-bg {
+    background-image: url('../assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0F0220; /* Fallback dark color */
+    width: 100%;
+}
+
+/* for btn*/
+.hero-circle, .figma-gradient-btn {
+    background: linear-gradient(47.64deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%) !important;
+}
+
+/* text and btn */
+h2, .figma-gradient-btn {
+    color: #FFFFFF;
+}
+
+/* footer bg */
+#footer-bg {
+    background-image: url('../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
