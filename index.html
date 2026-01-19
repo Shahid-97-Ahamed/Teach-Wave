@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teac Wave</title>
     <!-- css links -->
     <link rel="stylesheet" href="css/styles.css">
+    <!--Tailwind links  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: "#A855F7",
+                        secondary: "#22D3EE",
+                        dark: "#0F0220"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    
+
+<body class=" text-white font-inter">
+    <!-- Navbar Start Here-->
+    <header class="w-full border-b border-[#412567] bg-[#1A0B2E]  top-0 z-50">
+        <div class="max-w-[1600px] mx-auto box-border flex items-center justify-between
+              /* Desktop: 92px height, 200px padding */
+              lg:h-[92px] lg:px-[200px] 
+              /* Mobile: 60px height, 20px padding */
+              h-[60px] px-[20px]">
+
+            <h1 class="text-4xl lg:text-4xl font-bold font-inter text-white">
+                Tech<span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8]">Wave</span>
+            </h1>
+
+            <nav class="hidden lg:flex gap-10 text-sm font-medium text-white">
+                <a href="#" class="hover:text-[#FF3BFF] transition">About</a>
+                <a href="#" class="hover:text-[#FF3BFF] transition">Episodes</a>
+                <a href="#" class="hover:text-[#FF3BFF] transition">Host</a>
+            </nav>
+
+            <button
+                class="hidden lg:flex items-center gap-2 px-6 py-2 rounded-full font-bold text-white bg-gradient-to-r from-[#FFD64D] via-[#FF3BFF] to-[#A02BFF] hover:scale-105 transition shadow-lg">
+                Subscribe →
+            </button>
+
+            <div class="lg:hidden flex items-center">
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+                <label for="menu-toggle" class="cursor-pointer">
+                    <img src="assets/hamburger-menu.png" alt="" srcset="">
+                </label>
+
+                <div
+                    class="absolute top-[60px] left-0 w-full bg-[#1A0B2E] hidden peer-checked:block border-b border-[#412567]">
+                    <nav class="flex flex-col items-start px-[20px] py-6 space-y-4 text-white">
+                        <a href="#" class="w-full py-2 border-b border-[#412567]/50">About</a>
+                        <a href="#" class="w-full py-2 border-b border-[#412567]/50">Episodes</a>
+                        <a href="#" class="w-full py-2 border-b border-[#412567]/50">Host</a>
+                        <button
+                            class="w-full mt-4 px-6 py-3 rounded-full font-bold bg-gradient-to-r from-[#FFD64D] via-[#FF3BFF] to-[#A02BFF]">
+                            Subscribe
+                        </button>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
 </body>
+
 </html>
